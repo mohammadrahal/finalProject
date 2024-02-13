@@ -1,0 +1,268 @@
+/* font */
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap"); */
+/* end */
+/* colors  */
+:root {
+  --first-color: #382f5c;
+  --btn-text-color: #f5fbff;
+  --btn-color: #162dd1;
+  --bg-color: #f8f8f8;
+  --boder-radius: 15px;
+}
+/* end colors */
+/* general */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.m_10 {
+  margin-top: 15px;
+}
+/* end */
+
+/* resp */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end res */
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items-list {
+  display: flex;
+  align-items: center;
+}
+
+.items-list li {
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+/* end */
+/* sub header */
+.sub_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub_header_contnet {
+  display: grid;
+  gap: 20px;
+}
+.sub_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.btn_sub {
+  /* padding: 15px 25px; */
+  width: 11em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: var(--boder-radius);
+  color: var(--btn-text-color);
+  background-color: var(--btn-color);
+  cursor: pointer;
+  transition: ease 2s;
+}
+.btn_sub:hover {
+  transform: translate(10px);
+}
+
+.sub_header_image img {
+  width: 30rem;
+}
+/* end sub header */
+
+/* books */
+.book_container{
+  margin-top: 10px;
+  display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px 20px;
+}
+.card{
+  width: 20rem;
+ padding: 1rem;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ gap: 10px;
+ box-shadow:0px 4px 12px rgba(0, 0, 0, 0.1) ;
+}
+
+.card_buttons{
+display: flex;
+justify-content: space-around;
+gap: 30px;
+}
+
+.card_button{
+  width: 8em;
+  height: 3em;
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius:var(--boder-radius);
+border: none;
+cursor: pointer;
+}
+
+.read{
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+}
+
+.card_pic img{
+  width: 15rem;
+}
+/* end */
+
+
+/* about */
+.about_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about_image img {
+  width: 15rem;
+}
+/* end about */
+
+/* test */
+.test_container{
+  display: grid;
+  place-content: center;
+  margin-top: 16px;
+}
+/* end */
+/* footer */
+.footer_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+/* end footer */
+/* mobile */
+@media (max-width: 768px) {
+  /* general */
+  .title {
+    font-size: 1.5rem;
+  }
+  /* end */
+  /* header */
+  .header {
+    margin-top: 10px;
+  }
+  .items-list {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger .first,
+  .burger .second,
+  .burger .third {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #1b1b1b;
+    margin: 4px;
+  }
+
+  .show {
+    position: absolute;
+    right: 22px;
+    top: 59px;
+    background-color: red;
+    width: 27%;
+    height: 191px;
+    display: block;
+  }
+  /* end header */
+
+  /*sub_header */
+  .sub_header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sub_title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .sub_header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sub_header_image img {
+    width: 20rem;
+  }
+  /* end */
+
+  /* about */
+  .about_content {
+    justify-content: center;
+  }
+  .about_image img {
+    display: none;
+  }
+  /* end */
+}
+/* end */

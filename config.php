@@ -8,7 +8,7 @@ $conn = mysqli_connect($localhost, $user, $password, $dbName);
 if(!$conn){  
         die('Could not connect: ' . mysqli_error());  
       }  
-    //   echo 'WOWOWOWOW Connected successfully';  
+      // echo 'WOWOWOWOW Connected successfully';  
       mysqli_close($conn); 
 
 ?>
