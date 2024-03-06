@@ -1,0 +1,62 @@
+<!-- <?php
+include "config.php"
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>register</title>
+  </head>
+  <body>
+    <div class="login_container">
+      <h1>Register</h1>
+      <form action="" method="POST"  onsubmit="return inputValid()">
+      <div id="error_msg"></div>
+      <div class="input_control">
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            name="Fname"
+            id="Fname"
+            placeholder="example@example.com"
+          />
+        </div>
+        <div class="input_control">
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            name="Lname"
+            id="Lname"
+            placeholder="example@example.com"
+          />
+        </div>
+        <div class="input_control">
+          <label for="email">email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@example.com"
+          />
+        </div>
+        <div class="input_control">
+          <label for="password">password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="your password"
+          />
+        </div>
+        <div class="login_btn">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/reg.js"></script>
+  </body>
+</html>
